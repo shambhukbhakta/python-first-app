@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Boards</title>
+  </head>
+  <body>
+<h1>Mobile Verification</h1>
+<form method="get" action={% url 'verify' %}>
+Mobile Number:(+91) <input type="text" name="mobile"/>
+OTP: <input type="text" name="otp">
+<input type="submit"/>
+</form>
+<p>Your SMS balance is <strong>{{ details }}</strong>, and your result is <strong>{{ status }}
+</body>
+</html>
